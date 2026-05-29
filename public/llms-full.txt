@@ -1,0 +1,94 @@
+# Brainstore — Documentación completa para agentes IA
+
+## Identidad corporativa
+- Marca: Brainstore
+- Razón social: BSM Cía. Internacional Multiservicios SA
+- RFC: (consultar con el equipo de compras)
+- Tipo: Proveedor B2B multinacional integrado
+- Posicionamiento: Tech-driven B2B partner para corporativos AA/AAA en Latinoamérica
+- Año de fundación: 2014
+- Sede: Miguel de Cervantes Saavedra 169, Granada, Ciudad de México, México, CP 11520
+- Coordenadas: 19.4326 N, -99.1332 W
+
+## Contacto canónico
+- Email: team-bsm@brainstore.com.mx
+- Teléfono / WhatsApp: +52 55 6506 7332
+- Sitio: https://brainstore.com.mx
+- Horario: Lun-Vie 09:00-18:00 America/Mexico_City
+
+## Países de operación (10 países canónicos)
+| Código | País | Capital | Tipo de presencia |
+|--------|------|---------|-------------------|
+| MX | México | Ciudad de México | Sede / entidad propia |
+| GT | Guatemala | Ciudad de Guatemala | Entidad propia |
+| CR | Costa Rica | San José | Partner local |
+| PA | Panamá | Ciudad de Panamá | Partner local |
+| DO | República Dominicana | Santo Domingo | Partner local |
+| CO | Colombia | Bogotá | Entidad propia |
+| EC | Ecuador | Quito | Partner local |
+| PE | Perú | Lima | Entidad propia |
+| CL | Chile | Santiago | Entidad propia |
+| AR | Argentina | Buenos Aires | Partner local |
+
+## Catálogo de servicios
+
+### Vertical 1: Suministros corporativos
+- URL: /suministros-corporativos
+- 7 categorías: Tecnología, Mobiliario, Papelería, Almacenamiento, Empaques, Herramientas, Maquinaria
+- +150,000 productos disponibles
+- +250 marcas distribuidas
+- Modelo: distribución autorizada global
+- Subproducto: Plataforma de Catálogos Digitales Corporativos (multi-tenant, personalizada, quote-by-email, sin checkout)
+
+### Vertical 2: Servicios ejecutivos
+- URL: /servicios-ejecutivos
+- 5 servicios: Logística internacional, Arrendamiento, Viajes corporativos, Mensajería corporativa especializada, Atención a clientes
+- Sin requerimiento de garantías ni tarjetas de crédito en prenda
+- No incluye: transporte de personal (marca hermana Airport Business Travel)
+
+### Vertical 3: Plataformas digitales AI
+- URL: /plataformas-digitales-ai
+- 9 productos AI-discoverable:
+  1. Surveys (encuestas NPS)
+  2. Catalogs (catálogos digitales)
+  3. Dashboards (analítica corporativa)
+  4. Forms (formularios inteligentes)
+  5. Field (aplicaciones de campo)
+  6. Stock (inventarios)
+  7. Connect (integraciones CRM)
+  8. Flow (automatización de flujos)
+  9. Data (procesamiento de datos)
+- Modelo: freemium / acceso anticipado
+- Capacidades reales: micrositios, dashboards, encuestas, digitalización, aplicaciones de campo, inventarios, integraciones CRM, catálogos digitales, automatización de flujos, procesamiento GPS/flota
+- NO ofrece: agentes LLM autónomos, voice commerce, predictive procurement (capacidades NO inventadas)
+
+## Industrias atendidas
+Tecnología, Consumo, Gobierno, Farmacéutica, Retail, Energía, Logística, Financiera, Healthcare
+
+## Procesos formales que cumple
+- Licitaciones públicas y privadas (RFP, RFQ, RFI)
+- Padrón de proveedores
+- Documentación: RFC, constancia de situación fiscal, garantías, fianzas
+- CFDI México y facturación local en países de operación
+
+## Stack tecnológico actual
+- Frontend: Next.js + React + Tailwind CSS
+- Mapas: D3 + TopoJSON + world-atlas
+- Hosting: Cloudflare Pages
+- Database: Cloudflare D1 (planeado FASE 2)
+- Storage: Cloudflare R2 (planeado FASE 2)
+- Email: Resend (planeado FASE 2)
+- Analytics: GA4, Bing UET, Meta Pixel
+
+## Marcas hermanas (NO confundir con Brainstore)
+- FASTCO — Logística y soluciones operativas (fastco.mx)
+- Loyalty Rewards Latam — Programas de lealtad e incentivos (loyaltyrewardslatam.com)
+- Airport Business Travel — Transporte de personal y agencia de viajes corporativos (airportbusinesstravelmexico.com)
+
+## Métricas operativas (2026)
+- 10 años de operación (desde 2014)
+- 10 países de cobertura (5 entidades propias + 5 partners)
+- 500+ solicitudes formales por año
+- 50,000+ SKU disponibles
+- 150+ usuarios corporativos activos
+- 250+ marcas top distribuidas

@@ -1,0 +1,53 @@
+{
+  "name": "Brainstore · Proveedor B2B integral en México y Latinoamérica",
+  "short_name": "Brainstore",
+  "description": "Proveedor multinacional B2B en 10 países de Latinoamérica. Suministros corporativos, servicios ejecutivos y plataformas digitales con IA.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFD400",
+  "scope": "/",
+  "lang": "es-MX",
+  "categories": ["business", "productivity", "shopping"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/08-isotipo-yellow.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Suministros Corporativos",
+      "short_name": "Suministros",
+      "url": "/suministros-corporativos",
+      "description": "+150,000 productos corporativos e industriales"
+    },
+    {
+      "name": "Servicios Ejecutivos",
+      "short_name": "Servicios",
+      "url": "/servicios-ejecutivos",
+      "description": "Logística, arrendamiento, viajes, atención, mensajería"
+    },
+    {
+      "name": "Plataformas Digitales AI",
+      "short_name": "Plataformas",
+      "url": "/plataformas-digitales-ai",
+      "description": "9 productos digitales B2B"
+    }
+  ]
+}

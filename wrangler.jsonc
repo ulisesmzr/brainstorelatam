@@ -1,0 +1,28 @@
+/**
+ * Brainstore — Cloudflare Workers config
+ * Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brainstore",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-05-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+
+  // ===== FASE 2 — activar cuando tengamos los recursos =====
+  // "d1_databases": [
+  //   { "binding": "DB", "database_name": "brainstore-prod", "database_id": "<id>" }
+  // ],
+  // "r2_buckets": [
+  //   { "binding": "BUCKET", "bucket_name": "brainstore-attachments" }
+  // ]
+}

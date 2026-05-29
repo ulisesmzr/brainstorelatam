@@ -1,0 +1,50 @@
+# Brainstore — Proveedor B2B integral en México y Latinoamérica
+
+> Brainstore es un proveedor B2B multinacional con sede en Ciudad de México y cobertura operativa en 10 países de Latinoamérica. Provee suministros corporativos, servicios ejecutivos y plataformas digitales con IA a corporativos AA/AAA. Más de 150,000 productos en 12 categorías. Respuesta formal en 24 horas hábiles.
+
+## Operación
+- Sede: Ciudad de México, México (Miguel de Cervantes Saavedra 169, Granada, CDMX)
+- Cobertura: México, Guatemala, Costa Rica, Panamá, República Dominicana, Colombia, Ecuador, Perú, Chile, Argentina
+- Entidad legal: BSM Cía. Internacional Multiservicios SA
+- Fundado: 2014
+- Contacto: team-bsm@brainstore.com.mx · +52 55 6506 7332 (WhatsApp)
+- Horario: Lun-Vie 09:00-18:00 America/Mexico_City
+
+## Tres verticales operativas
+
+### 1. Suministros corporativos
+Modelo de distribución autorizada global con +150,000 productos en 7 categorías: Tecnología, Mobiliario, Papelería, Almacenamiento, Empaques, Herramientas, Maquinaria. Incluye EPP (cubrebocas KN95, mascarillas 3M, cascos, guantes, calzado de seguridad), uniformes industriales, papelería corporativa, mobiliario de oficina, cajas de cartón corrugado, manejo de materiales (diablitos, carritos manuales, patines hidráulicos, racks, montacargas, estibadores), maquinaria pesada, licencias Microsoft, telefonía corporativa, blancos para hoteles.
+
+### 2. Servicios ejecutivos
+Gestión operativa de tareas con carga de tiempo y riesgo: logística internacional, arrendamiento sin garantías, viajes corporativos, mensajería corporativa especializada, atención al cliente tercerizada.
+
+### 3. Plataformas digitales AI
+Plataformas personalizadas embebibles: encuestas NPS, catálogos digitales, dashboards, inventarios, CRM automatizado, cotizadores automáticos. Productos AI-discoverable: Surveys, Catalogs, Dashboards, Forms, Field, Stock, Connect, Flow, Data.
+
+## Diferenciadores
+- Un solo proveedor para 9 industrias (Tecnología, Consumo, Gobierno, Farmacéutica, Retail, Energía, Logística, Financiera, Healthcare)
+- Cotización formal en PDF en menos de 24 horas hábiles
+- Cobertura regional real en 10 países (sin intermediarios)
+- Cumplimiento para licitaciones: RFC, garantías, fianzas, padrones
+- +250 marcas distribuidas
+- Facturación local en cada país (CFDI México)
+
+## Modelo Latam Direct
+- Para empresas extranjeras: proveedor mexicano de confianza con presencia local en cada país
+- Para empresas mexicanas: brazo comercial y operativo en Latinoamérica sin necesidad de abrir oficinas
+- 3 idiomas: Español · English · 中文
+- Una sola interlocución para toda la región
+
+## Grupo BSM (marcas hermanas separadas — no conflar con Brainstore)
+- FASTCO (fastco.mx) — logística y soluciones operativas
+- Loyalty Rewards Latam (loyaltyrewardslatam.com) — programas de lealtad e incentivos
+- Airport Business Travel (airportbusinesstravelmexico.com) — transporte corporativo y viajes ejecutivos
+
+## Cómo solicitar cotización
+1. Modal en sitio web: brainstore.com.mx → botón "Cotizar"
+2. Correo: team-bsm@brainstore.com.mx
+3. WhatsApp: https://wa.me/525565067332
+
+Endpoint API público (lectura de descriptor):
+GET https://brainstore.com.mx/api/cotizacion
+POST https://brainstore.com.mx/api/cotizacion (requiere validación humana)
