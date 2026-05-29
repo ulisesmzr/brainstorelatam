@@ -1,7 +1,6 @@
 // Auto-generated from brainstore-suministros-PREVIEW.html (29-may-2026)
-// REGENERATED with logo header fix (dorado #C9A227)
-// Size: 303232 chars / 296 KB
-// Contents: 14 critical assets from head + 6 JSON-LD schemas + body content
+// FIX v2: logo header + logo footer usan SVG dorado actualizado #C9A227
+// Size: 303308 chars / 296 KB
 
 export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS FROM ORIGINAL HEAD -->
 <link rel="preconnect" href="https://cdn.tailwindcss.com" />
@@ -5488,11 +5487,9 @@ export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS FROM ORIGINAL HEAD -->
 
       <!-- Brand + tagline -->
       <div class="footer-brand">
-        <div class="footer-logo">
-          <div class="footer-logo-square">
-            <div class="footer-logo-inner"></div>
-          </div>
-          <span class="footer-logo-text">brainstore</span>
+        <div class="footer-logo" style="display:flex;align-items:center;gap:10px;">
+          <img src="/brand/14-isotipo-gold.svg" alt="Brainstore" style="width:40px;height:40px;" />
+          <span class="footer-logo-text">brain<span style="color:#C9A227">·</span>store</span>
         </div>
 
         <h2 class="footer-tagline">
