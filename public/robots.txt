@@ -1,50 +1,90 @@
-# ============================================
-# Brainstore — robots.txt
-# Operating since 2014 · 10 países Latinoamérica
-# ============================================
+# Brainstore Latam · robots.txt
+# Actualizado: 2026-05-29
+# Estrategia: maxima visibilidad SEO + AI search 2026
 
+# === STANDARD CRAWLERS ===
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/static/chunks/
+Disallow: /admin/
 
-# ===== AI crawlers (allowlist explícito) =====
+# === AI CRAWLERS · ALLOWLIST EXPLÍCITA ===
+
+# OpenAI (ChatGPT, GPT-4, GPT-5)
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude, claude.ai, Claude Code)
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: claude-web
+Allow: /
+
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
+# Google (Gemini, AI Overviews, Bard)
 User-agent: Google-Extended
 Allow: /
 
-User-agent: CCBot
+User-agent: Googlebot
 Allow: /
 
+# Microsoft (Bing, Copilot, Microsoft 365)
 User-agent: Bingbot
 Allow: /
 
+User-agent: msnbot
+Allow: /
+
+# Apple (Siri, Apple Intelligence, Spotlight)
 User-agent: Applebot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta (Meta AI, Llama, WhatsApp/Instagram preview)
 User-agent: meta-externalagent
 Allow: /
 
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Bytespider
+# Common Crawl (alimenta a casi todos los LLMs entrenados)
+User-agent: CCBot
 Allow: /
 
-User-agent: Amazonbot
+# Yandex (mercado ruso/Europa Este)
+User-agent: YandexBot
 Allow: /
 
-# Sitemap
+# Baidu (mercado China — relevante para empresas exportadoras Latam)
+User-agent: Baiduspider
+Allow: /
+
+# DuckDuckGo (privacy-focused, agentes empresariales)
+User-agent: DuckDuckBot
+Allow: /
+
+# === SITEMAPS ===
 Sitemap: https://brainstore.com.mx/sitemap.xml
-
-# Host
-Host: https://brainstore.com.mx

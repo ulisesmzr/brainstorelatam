@@ -37,7 +37,7 @@ export default function HomeHeader({ onOpenQuote }: Props) {
 
           {/* Nav desktop */}
           <nav className="hidden lg:flex items-center gap-1" aria-label="Principal">
-            <a href="#suministros" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Suministros corporativos</a>
+            <a href="/suministros-corporativos" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Suministros corporativos</a>
             <a href="/servicios-ejecutivos" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Servicios ejecutivos</a>
             <a href="#plataformas" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Plataformas digitales AI</a>
             <a href="#latam" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Latam Direct</a>
@@ -90,7 +90,7 @@ export default function HomeHeader({ onOpenQuote }: Props) {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-ink/10">
           <div className="px-4 py-6 space-y-1">
-            <a href="#suministros" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Suministros corporativos</a>
+            <a href="/suministros-corporativos" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Suministros corporativos</a>
             <a href="/servicios-ejecutivos" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Servicios ejecutivos</a>
             <a href="#plataformas" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Plataformas digitales AI</a>
             <a href="#latam" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Latam Direct</a>
