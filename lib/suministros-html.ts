@@ -1,9 +1,7 @@
 // Auto-generated from brainstore-suministros-PREVIEW.html (29-may-2026)
-// Source MD5: 0badc9886b5b188e04a6c914c40d3679
-// Size: 303261 chars / 296 KB
+// REGENERATED with logo header fix (dorado #C9A227)
+// Size: 303232 chars / 296 KB
 // Contents: 14 critical assets from head + 6 JSON-LD schemas + body content
-//
-// To regenerate, run scripts/extract-suministros-html.py
 
 export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS FROM ORIGINAL HEAD -->
 <link rel="preconnect" href="https://cdn.tailwindcss.com" />
@@ -4897,10 +4895,8 @@ export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS FROM ORIGINAL HEAD -->
 
         <!-- Logo -->
         <a href="/" class="flex items-center gap-2.5 group">
-          <div class="w-8 h-8 bg-ink flex items-center justify-center transition-transform group-hover:rotate-45">
-            <div class="w-3 h-3 bg-yellow rotate-45"></div>
-          </div>
-          <span class="font-display-bold text-xl text-ink tracking-tight">brainstore</span>
+          <img src="/brand/14-isotipo-gold.svg" alt="Brainstore" class="w-8 h-8 transition-transform group-hover:scale-110" />
+          <span class="font-display-bold text-xl text-ink tracking-tight">brain<span style="color:#C9A227">·</span>store</span>
         </a>
 
         <!-- Nav desktop -->
