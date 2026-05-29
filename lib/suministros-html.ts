@@ -1,5 +1,5 @@
-// FIX v5: footer minimalista (sin fondo, alineado derecha, fuente moderada)
-// + BUSCADOR: solo abre dropdown con texto, no vacío
+// FIX v6: footer-hero alineado izquierda, sin línea ni fondo, título Contacto
+// + buscador solo abre con texto
 // Size: 296 KB
 
 export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS -->
@@ -5507,8 +5507,9 @@ export const SUMINISTROS_HTML = `<!-- CRITICAL ASSETS -->
         </button>
       </div>
 
-      <!-- Datos de contacto -->
-      <div class="footer-coverage" style="display:flex;flex-direction:column;gap:18px;text-align:right;align-items:flex-end;min-width:260px;">
+      <!-- Datos de contacto incrustados -->
+      <div class="footer-coverage" style="display:flex !important;flex-direction:column !important;gap:18px !important;text-align:left !important;align-items:flex-start !important;background:none !important;background-color:transparent !important;border:none !important;border-left:none !important;padding:0 !important;min-width:260px;">
+        <div class="footer-col-title">Contacto</div>
         <div style="display:flex;flex-direction:column;gap:3px;">
           <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.4);">Atención comercial</span>
           <a href="mailto:team-bsm@brainstore.com.mx" style="font-size:14px;font-weight:500;color:white;text-decoration:none;">team-bsm@brainstore.com.mx</a>
@@ -7649,13 +7650,12 @@ if (typeof module !== 'undefined') module.exports = CATALOG;
 
     input.addEventListener('focus', () => {
       if (suppressOpen) return;
-      // Solo abrir dropdown si hay texto en el input
       if (input.value.trim()) {
         performSearch();
       }
     });
 
-    // Click en el input solo abre dropdown si hay texto (no abre vacío)
+    // Click solo abre dropdown si hay texto (no abre vacío)
     input.addEventListener('click', () => {
       if (suppressOpen) return;
       if (!dropdown.classList.contains('is-open') && input.value.trim()) {
