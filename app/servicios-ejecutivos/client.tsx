@@ -8,20 +8,26 @@
  *   - IntersectionObserver para .reveal al hacer scroll
  *   - Body scroll lock cuando hay modal abierto
  *   - Tecla Escape cierra el modal activo
- *   - Compone los 7 componentes del módulo
+ *   - Compone los componentes del módulo
+ *
+ * v2 (unificación): usa HomeHeader y HomeFooter compartidos
+ * para mantener consistencia visual entre las 3 páginas del sitio.
+ * Los archivos ./components/Header.tsx y ./components/Footer.tsx ya no se usan.
  */
 
 import { useCallback, useEffect, useState } from 'react'
 
 import './styles.css'
 
-import Header from './components/Header'
+// === Header y Footer compartidos (unificación con Home y Suministros) ===
+import HomeHeader from '@/app/components/shared/HomeHeader'
+import HomeFooter from '@/app/components/shared/HomeFooter'
+
 import Hero from './components/Hero'
 import ServicesGrid from './components/ServicesGrid'
 import ServiceModal from './components/ServiceModal'
 import QuoteForm from './components/QuoteForm'
 import ContactBlock from './components/ContactBlock'
-import Footer from './components/Footer'
 
 // ============================================================================
 // Tipos compartidos del módulo
@@ -81,7 +87,6 @@ export default function ServiciosEjecutivosClient() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible')
-            // Una vez revelado, dejarlo en su estado final
             observer.unobserve(entry.target)
           }
         })
@@ -92,7 +97,6 @@ export default function ServiciosEjecutivosClient() {
       }
     )
 
-    // Pequeño delay para asegurar que el DOM ya está pintado
     const id = window.setTimeout(() => {
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
     }, 50)
@@ -156,9 +160,10 @@ export default function ServiciosEjecutivosClient() {
   // ==========================================================================
   return (
     <>
-      <Header onOpenQuote={() => openQuote()} />
+      <HomeHeader onOpenQuote={() => openQuote()} />
 
-      <main id="content">
+      {/* paddingTop:64 compensa el HomeHeader fixed (h-16) */}
+      <main id="content" style={{ paddingTop: 64 }}>
         <Hero onOpenQuote={() => openQuote()} />
 
         <ServicesGrid
@@ -169,7 +174,7 @@ export default function ServiciosEjecutivosClient() {
         <ContactBlock onOpenQuote={() => openQuote()} />
       </main>
 
-      <Footer />
+      <HomeFooter />
 
       {/* Modales — viven fuera del flow para no afectar layout */}
       <ServiceModal
