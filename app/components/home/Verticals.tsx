@@ -7,9 +7,14 @@
  * Card 2 (col-span-5): Servicios ejecutivos — fondo amarillo
  * Card 3 (col-span-5): Plataformas digitales AI — fondo blanco con border, hover inverso
  *
- * CORRECCIONES vs HTML:
- *     "Gestión operativa de tareas que suponen carga de tiempo y riesgo.
- *      Operamos, reservamos y arrendamos productos y servicios..."
+ * FIX BUG client-side navigation:
+ *   - Suministros y Plataformas usan HTML embebido con scripts que modifican `window`
+ *     globalmente. Si se llega a esas páginas via <Link> de Next.js, el estado residual
+ *     causa que la página se vea en blanco.
+ *   - Solución: usar <a href> en lugar de <Link> para esas 2 cards → fuerza hard
+ *     navigation (recarga completa) → fresh state → sin bugs.
+ *   - Servicios SÍ usa <Link> porque está construido con componentes React puros y
+ *     no tiene HTML embebido.
  */
 
 import Link from 'next/link'
@@ -37,8 +42,8 @@ export default function Verticals() {
 
         {/* Grid 12 columnas */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
-          {/* CARD 01 — SUMINISTROS (col-span-7 row-span-2) */}
-          <Link
+          {/* CARD 01 — SUMINISTROS (col-span-7 row-span-2) · hard nav (HTML embebido) */}
+          <a
             href="/suministros-corporativos"
             className="reveal tilt-card group relative lg:col-span-7 lg:row-span-2 bg-ink text-white p-6 sm:p-8 lg:p-12 overflow-hidden cursor-pointer min-h-[420px] lg:min-h-[560px] flex flex-col"
             data-track="card_suministros"
@@ -94,9 +99,9 @@ export default function Verticals() {
                 </svg>
               </span>
             </div>
-          </Link>
+          </a>
 
-          {/* CARD 02 — SERVICIOS EJECUTIVOS (col-span-5) */}
+          {/* CARD 02 — SERVICIOS EJECUTIVOS (col-span-5) · client nav (componentes React puros) */}
           <Link
             id="servicios"
             href="/servicios-ejecutivos"
@@ -136,8 +141,8 @@ export default function Verticals() {
             </div>
           </Link>
 
-          {/* CARD 03 — PLATAFORMAS DIGITALES AI (col-span-5) */}
-          <Link
+          {/* CARD 03 — PLATAFORMAS DIGITALES AI (col-span-5) · hard nav (HTML embebido futuro) */}
+          <a
             id="plataformas"
             href="/plataformas-digitales-ai"
             className="reveal tilt-card group relative lg:col-span-5 bg-white border-2 border-ink p-6 sm:p-8 lg:p-10 overflow-hidden cursor-pointer min-h-[260px] flex flex-col hover:bg-ink hover:text-white transition-colors duration-500"
@@ -175,7 +180,7 @@ export default function Verticals() {
                 </svg>
               </span>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
