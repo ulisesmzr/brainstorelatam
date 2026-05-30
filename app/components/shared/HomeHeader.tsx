@@ -3,9 +3,13 @@
 /**
  * Header fijo · paridad 1:1 con HTML v7-final
  *
- * Logo: cuadrado negro 9x9 con cuadrado amarillo 3x3 girado 45° + wordmark "brainstore"
+ * Logo: imagotipo dorado + wordmark "brain·store" (punto dorado #C9A227)
  * Nav 5 links + tag "10 países · Latinoamérica" (live-dot) + CTA Cotizar magnético
  * Menú móvil expandible
+ *
+ * FIX: los links Plataformas, Latam y Nosotros ahora apuntan a sus rutas reales,
+ * no a anchors del Home. Si la ruta no existe aún (404), el usuario llega a un
+ * 404 explícito, lo cual es mejor que la confusión de navegar al anchor del Home.
  */
 
 import { useState } from 'react'
@@ -35,13 +39,13 @@ export default function HomeHeader({ onOpenQuote }: Props) {
             </span>
           </a>
 
-          {/* Nav desktop */}
+          {/* Nav desktop · rutas reales (no anchors) */}
           <nav className="hidden lg:flex items-center gap-1" aria-label="Principal">
             <a href="/suministros-corporativos" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Suministros corporativos</a>
             <a href="/servicios-ejecutivos" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Servicios ejecutivos</a>
-            <a href="#plataformas" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Plataformas digitales AI</a>
-            <a href="#latam" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Latam Direct</a>
-            <a href="#" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Nosotros</a>
+            <a href="/plataformas-digitales-ai" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Plataformas digitales AI</a>
+            <a href="/latam-direct" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Latam Direct</a>
+            <a href="/nosotros" className="px-3 py-2 text-sm font-medium text-ink/70 hover:text-ink transition-colors link-underline">Nosotros</a>
           </nav>
 
           {/* CTAs */}
@@ -86,15 +90,15 @@ export default function HomeHeader({ onOpenQuote }: Props) {
         </div>
       </div>
 
-      {/* Menú mobile */}
+      {/* Menú mobile · rutas reales (no anchors) */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-ink/10">
           <div className="px-4 py-6 space-y-1">
             <a href="/suministros-corporativos" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Suministros corporativos</a>
             <a href="/servicios-ejecutivos" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Servicios ejecutivos</a>
-            <a href="#plataformas" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Plataformas digitales AI</a>
-            <a href="#latam" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Latam Direct</a>
-            <a href="#" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Nosotros</a>
+            <a href="/plataformas-digitales-ai" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Plataformas digitales AI</a>
+            <a href="/latam-direct" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Latam Direct</a>
+            <a href="/nosotros" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Nosotros</a>
           </div>
         </div>
       )}
